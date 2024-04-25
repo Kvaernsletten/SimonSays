@@ -8,21 +8,38 @@ _colorLibrary {
 html{
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 50px;
     background-color: rgb(29, 21, 32); /* MAIN BGC */
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    font-size: 300%;
+    color: rgb(211, 134, 45);
+    margin-bottom: 30px;
 }
 
 .container{
     display: flex;
     grid-template-columns: repeat(2, 2fr);
-    border: 5px solid rgb(211, 134, 45); /* BORDERS */
+    border: 5px solid rgb(211, 134, 45); 
 }
 .score{
     display: flex;
     font-size: 200%;
     color: rgb(211, 134, 45);
-    border: 5px solid rgb(211, 134, 45); /* BORDERS */
+    border: 5px solid rgb(211, 134, 45);
     border-top: none;
+}
+button{
+    margin-left: 150px;
+    margin-top: 10px;
+    height: 50px;
+    width: 100px;
+    background-color: rgba(106, 81, 117, 0.719);
+    color: rgb(211, 134, 45);
+    border: 5px solid rgb(211, 134, 45);
 }
 .blue{
     width: 200px;

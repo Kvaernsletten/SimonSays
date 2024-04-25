@@ -29,6 +29,7 @@ let lamp = {
 updateView();
 function updateView() {
     app.innerHTML = /*HTML*/ `
+    <div class="header">Simon says!</div>
         <div class="container">
             <div>
                 <div id="blue" 
@@ -52,7 +53,7 @@ function updateView() {
         <div class="score">Score: ${score}</div>
         <div class="score">Highscore: ${highscore}</div>
         
-        ${gameRunning ? '' :  '<button onclick="startGame()">Start</button>'}
+        ${gameRunning ? '' :  '<button onclick="startGame()">New game</button>'}
     `;
 }
 
