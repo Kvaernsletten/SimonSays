@@ -1,5 +1,6 @@
 let app = document.getElementById('app');
 let gameRunning = false;
+let infoText = "Press new game to start";
 let score = "0";
 let highscore = "0";
 let sequencePlaying = false;
@@ -30,6 +31,7 @@ updateView();
 function updateView() {
     app.innerHTML = /*HTML*/ `
     <div class="header">Simon says!</div>
+    <div class="infoText">${infoText}</div>
         <div class="container">
             <div>
                 <div id="blue" 
@@ -59,6 +61,7 @@ function updateView() {
 
 function startGame(){
     gameRunning = true;
+    infoText = "Simon's turn!"
     sequence = [0,];
     addNextStep();
     playerSequence = [];
@@ -113,6 +116,7 @@ function playSequence() {
         }else{
             sequencePlaying = false;
             canClick = true;
+            infoText = "Your turn";
             updateView();
         }
     }
@@ -178,6 +182,7 @@ function clickColor(color) {
             gameRunning = false;
             loseAudio.play();
             score = 0;
+            infoText = "Press new game to start";
         }
         
         
@@ -187,6 +192,7 @@ function clickColor(color) {
             if(score >= highscore){
                 highscore = score;
             }
+            infoText = "Simon's turn!"
             addNextStep();
             setTimeout(() => {
                 playSequence();

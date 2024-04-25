@@ -20,6 +20,14 @@ html{
     margin-bottom: 30px;
 }
 
+.infoText{
+    display: flex;
+    justify-content: center;
+    font-size: 200%;
+    color: rgb(211, 134, 45);
+    margin-bottom: 30px;
+}
+
 .container{
     display: flex;
     grid-template-columns: repeat(2, 2fr);
