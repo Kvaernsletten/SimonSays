@@ -1,0 +1,67 @@
+_colorLibrary {
+    background-color: rgb(29, 21, 32); /* MAIN BGC */
+    background-color: rgba(106, 81, 117, 0.719); /* UI BGC */
+    border: 5px solid rgb(211, 134, 45); /* BORDERS */
+    background-color: rgb(43, 29, 48); /* ACCENT BGC */
+}
+
+html{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    background-color: rgb(29, 21, 32); /* MAIN BGC */
+}
+
+.container{
+    display: flex;
+    grid-template-columns: repeat(2, 2fr);
+    border: 5px solid rgb(211, 134, 45); /* BORDERS */
+}
+.score{
+    display: flex;
+    font-size: 200%;
+    color: rgb(211, 134, 45);
+    border: 5px solid rgb(211, 134, 45); /* BORDERS */
+    border-top: none;
+}
+.blue{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0, 0, 60);
+}
+.red{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(60, 0, 0);
+}
+.green{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0, 60, 0);
+}
+.yellow{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(60, 60, 0);
+}
+.flashblue{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+.flashred{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+.flashgreen{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+.flashyellow{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+}
+
